@@ -47,5 +47,5 @@
 [branch "master"]
   mergeoptions = --no-edit
 [user]
-	email = Agathos
-	name = Nikos
+	email = nicolas.agathos@gmail.com
+	name = Nikos Agathos
