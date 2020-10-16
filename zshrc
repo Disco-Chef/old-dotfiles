@@ -9,7 +9,6 @@ plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting
 # (macOS-only) Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1
 
-ZSH_DISABLE_COMPFIX=true
 # Actually load Oh-My-Zsh
 source "${ZSH}/oh-my-zsh.sh"
 unalias rm # No interactive rm by default (brought by plugins/common-aliases)
@@ -32,8 +31,8 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 
 # Load 'lewagon' virtualenv for the Data Bootcamp. You can comment these 2 lines to disable this behavior.
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-pyenv activate lewagon 2>/dev/null && echo "🐍 Loading 'lewagon' virtualenv"
+# export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+# pyenv activate lewagon 2>/dev/null && echo "🐍 Loading 'lewagon' virtualenv"
 
 # Store your own aliases in the ~/.aliases file and load the here.
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
@@ -43,5 +42,3 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
-export BROWSER=/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe
-sudo /etc/init.d/postgresql start
