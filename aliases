@@ -16,7 +16,7 @@ alias livetree='while :
                         tree .
                         sleep 0.75
                 done'
-alias speedtest_logging="while :
+alias speedtestlogger="while :
                         do
                         date >> ~/code/testing_area/speedtest_logs.sh
                         echo '********************************' >> ~/code/testing_area/speedtest_logs.sh
@@ -25,6 +25,6 @@ alias speedtest_logging="while :
                         echo '==========================================================================================================================' >> ~/code/testing_area/speedtest_logs.sh
                         echo '' >> ~/code/testing_area/speedtest_logs.sh
                         done"
-alias ping_logging="date >> ~/code/testing_area/ping_logs.sh
+alias pinglogger="date >> ~/code/testing_area/ping_logs.sh
                     echo \"Running \$ ping www.google.com \$ and logging every 1 second\" >> ~/code/testing_area/ping_logs.sh
                     ping www.google.com >> ~/code/testing_area/ping_logs.sh"
