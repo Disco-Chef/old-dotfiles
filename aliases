@@ -11,7 +11,20 @@ alias livetree='while :
                         sleep 0.75
                 done'
 alias gst='git status'
+alias gco="git checkout"
+
 alias catswindow="gnome-terminal --geometry=150x50 --tab --title='Pickles' -e 'zsh -c \"oneko -bg orange -fg brown -name Pickles -speed 14 -tofocus -position +35+0 -time 100000; exec zsh\"' --tab --title='Adonis' -e 'zsh -c \"oneko -bg grey -fg black -name Adonis -speed 16 -tofocus -position -35+0 -time 100500 ;exec zsh\"' --tab --title='Louise' -e 'zsh -c \"oneko -bg white -fg red -name Louise -speed 15 -tofocus -position +0+0 -time 100250;exec zsh\"'"
 alias catsmouse="gnome-terminal --geometry=150x50 --tab --title='Pickles' -e 'zsh -c \"oneko -bg orange -fg brown -name Pickles -speed 14 -position +35+0 -time 100000; exec zsh\"' --tab --title='Adonis' -e 'zsh -c \"oneko -bg grey -fg black -name Adonis -speed 16 -position -35+0 -time 100500 ;exec zsh\"' --tab --title='Louise' -e 'zsh -c \"oneko -bg white -fg red -name Louise -speed 15 -position +0+0 -time 100250;exec zsh\"'"
-alias gco="git checkout"
 alias randomroa="curl https://rulesofacquisitionrails.herokuapp.com/api/v1/rules/random"
+
+alias pinglogger="echo `date` >> ~/code/connection_data/munich_office/ping_logs.txt;
+                  ping www.google.com >> ~/code/connection_data/munich_office/ping_logs.txt"
+alias speedtestlogger="while :
+                        do
+                          echo `date` >> ~/code/connection_data/munich_office/speedtest_logs.txt;
+                          echo '*****************************' >> ~/code/connection_data/munich_office/speedtest_logs.txt;
+                          speedtest >> ~/code/connection_data/munich_office/speedtest_logs.txt;
+                          echo '' >> ~/code/connection_data/munich_office/speedtest_logs.txt;
+                          echo '=============================================' >> ~/code/connection_data/munich_office/speedtest_logs.txt;
+                          echo '' >> ~/code/connection_data/munich_office/speedtest_logs.txt;
+                        done"
