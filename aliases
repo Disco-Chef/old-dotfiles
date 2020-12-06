@@ -28,3 +28,12 @@ alias speedtestlogger="while :
 alias pinglogger="date >> ~/code/testing_area/ping_logs.sh
                     echo \"Running \$ ping www.google.com \$ and logging every 1 second\" >> ~/code/testing_area/ping_logs.sh
                     ping www.google.com >> ~/code/testing_area/ping_logs.sh"
+alias livetreehere='while :
+                        do
+                        clear
+                        tree .
+                        sleep 0.75
+                        done'
+facepalm(){ 
+        curl -X POST -H 'Content-Type: application/json' -d '{ "description": "'"$1"'", "author": "'"$2"'" }' https://jar-luc.herokuapp.com/api/v1/palmies
+}
