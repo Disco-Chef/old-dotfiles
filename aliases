@@ -35,3 +35,5 @@ facepalm(){
                 echo "One or both of author/description are empty 😅"
         fi
 }
+alias zshconfig="code ~/.zshrc"
+alias wslopen="explorer.exe ."
