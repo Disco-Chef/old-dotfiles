@@ -28,3 +28,4 @@ alias speedtestlogger="while :
                           echo '=============================================' >> ~/code/connection_data/munich_office/speedtest_logs.txt;
                           echo '' >> ~/code/connection_data/munich_office/speedtest_logs.txt;
                         done"
+alias zshconfig="stt ~/.zshrc"
