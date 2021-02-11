@@ -37,3 +37,5 @@ facepalm(){
 }
 alias zshconfig="code ~/.zshrc"
 alias wslopen="explorer.exe ."
+alias randomroa="curl https://rulesofacquisitionrails.herokuapp.com/api/v1/rules/random"
+
