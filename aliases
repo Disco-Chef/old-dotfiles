@@ -6,7 +6,6 @@ alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/m
 alias serve='ruby -run -e httpd . -p 8000' # Or python -m SimpleHTTPServer :)
 alias gst='git status'
 alias gco="git checkout"
-# alias runinternettests="gnome-terminal --geometry=150x50 --tab -e 'zsh -c ping www.google.com';exec zsh --geometry=150x50 --tab -e 'zsh -c ping www.google.com';exec zsh"
 alias catswindow="gnome-terminal --geometry=150x50 --tab --title='Pickles' -e 'zsh -c \"oneko -bg orange -fg brown -name Pickles -speed 14 -tofocus -position +35+0 -time 100000; exec zsh\"' --tab --title='Adonis' -e 'zsh -c \"oneko -bg grey -fg black -name Adonis -speed 16 -tofocus -position -35+0 -time 100500 ;exec zsh\"' --tab --title='Louise' -e 'zsh -c \"oneko -bg white -fg red -name Louise -speed 15 -tofocus -position +0+0 -time 100250;exec zsh\"'"
 alias catsmouse="gnome-terminal --geometry=150x50 --tab --title='Pickles' -e 'zsh -c \"oneko -bg orange -fg brown -name Pickles -speed 14 -position +35+0 -time 100000; exec zsh\"' --tab --title='Adonis' -e 'zsh -c \"oneko -bg grey -fg black -name Adonis -speed 16 -position -35+0 -time 100500 ;exec zsh\"' --tab --title='Louise' -e 'zsh -c \"oneko -bg white -fg red -name Louise -speed 15 -position +0+0 -time 100250;exec zsh\"'"
 
